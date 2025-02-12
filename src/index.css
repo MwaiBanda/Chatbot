@@ -121,10 +121,8 @@ button:focus-visible {
   display: flex;
   display: inline-flex;
   flex-wrap: wrap;
-  padding-top: 15px;
-  gap: 10px;
-  align-items: end;
-  
+  padding-top: 25px;
+  gap: 15px;  
 }
 
 .tab {
