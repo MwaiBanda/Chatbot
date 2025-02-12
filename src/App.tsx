@@ -18,8 +18,8 @@ enum OptionType {
 
 function App() {
   const options: Option[] = [
-    { id: 1, name: 'Departments', type: OptionType.Departments },
     { id: 2, name: 'Courses', type: OptionType.Courses },
+    { id: 1, name: 'Departments', type: OptionType.Departments },
     { id: 3, name: 'Locations', type: OptionType.Locations },
     { id: 4, name: 'Admssions', type: OptionType.Admissions },
     { id: 5, name: 'Contact', type: OptionType.Contact },
@@ -31,7 +31,6 @@ function App() {
        <div className="header">
         <p className="title">Ivy Tech Community College</p>
        </div>
-       <hr className="solid"/>
        <div className="content">
         <div className="content-container">
         <div className="response">
