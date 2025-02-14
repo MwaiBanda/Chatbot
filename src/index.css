@@ -101,13 +101,17 @@ button:focus-visible {
 }
 
 .content-container {
-  margin: 10px;
-  align-items: start;
+  width: 100%;
+  position: relative;
+  overflow-y: scroll;
 }
 
-.response {
+.content-container::-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+.message{   
   background-color: #f8f8f8;
-  width:  100%;
+  width:  65%;
   color: #24252A;
   margin: 10px;
   border-radius: 10px;
@@ -115,26 +119,17 @@ button:focus-visible {
   font-size: 1em;
   font-weight: 500;
 }
-.options {
-  background-color: #ffffff;
-  width:  100%;
-  display: flex;
-  display: inline-flex;
-  flex-wrap: wrap;
-  padding-top: 25px;
-  gap: 15px;  
+.message.reply {
+  text-align: right;
+  margin-left: 30%;
 }
+.message.response {
+  text-align: left;
+  margin-right: 35%;
+} 
 
-.tab {
-  border: 2px solid rgb(154, 154, 158);
-  border-radius: 10px;
-  height: 40px;
-  text-align: center;
-  vertical-align: middle;
-  line-height: 40px;  
-  color: rgb(86, 86, 89);
-  font-weight: 600;
-}
+
+
 
 .title {
   font-size: 1.5em;
@@ -142,9 +137,6 @@ button:focus-visible {
   color: rgb(86, 86, 89);
 }
 
-.tab-name {
-  margin: 0 10px;
-}
 
 .header {
   border-bottom: 1px solid #E6E6E6  ;

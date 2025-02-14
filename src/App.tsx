@@ -1,30 +1,21 @@
+import React, { useEffect } from 'react'
 import './App.css'
-
-
-type Option = {
-  id: number
-  name: string
-  type: OptionType
-}
-
-enum OptionType {
-  Departments = 'Departments',
-  Courses = 'Courses',
-  Locations = 'Locations',
-  Admissions = 'Admissions',
-  Contact = 'Contact',
-  AboutUs = 'About Us',
-}
+import clsx from 'clsx'
+import { Flow, Response, ResponseType } from "./types/types"
+import { OptionsController } from './OptionsController'
 
 function App() {
-  const options: Option[] = [
-    { id: 2, name: 'Courses', type: OptionType.Courses },
-    { id: 1, name: 'Departments', type: OptionType.Departments },
-    { id: 3, name: 'Locations', type: OptionType.Locations },
-    { id: 4, name: 'Admssions', type: OptionType.Admissions },
-    { id: 5, name: 'Contact', type: OptionType.Contact },
-    { id: 6, name: 'About Us',  type: OptionType.AboutUs },
-  ]
+  const [responses, setResponses] = React.useState<Response[]>(
+    [
+      {id: 1, text: ['Hello 👋🏾', 'How are you doing today?'], type: ResponseType.Response},
+      {id: 2, text: ['What brings you to Ivy Tech today? 😊'], type: ResponseType.Response},
+    ]
+  )
+  const [flow, setFlow] = React.useState<Flow>(Flow.Welcome)
+
+  useEffect(() => {
+    document.getElementById(`${responses[responses.length - 1].id}`)?.scrollIntoView()
+  }, [responses])
   return (
     <>
       <div className='card'>
@@ -33,24 +24,31 @@ function App() {
        </div>
        <div className="content">
         <div className="content-container">
-        <div className="response">
-            Hello 👋🏾
-          </div>
-        </div>
-      
-       </div>
-       <div className="options">
-        {options.map((option) => {
-          return <div className="tab">
-            <div className="tab-name">
-              {option.name}
+        {responses.map(response => {
+           return <div key={response.id} id={`${response.id}`} className={clsx("message", response.type.toLowerCase())}>
+            <div className="text">
+              {response.text.map((text, index) => {
+                  return <span>{text} {index !== response.text.length - 1 && <br/>}</span>
+              })}
+              <span>{response.url && <a href={response.url} target="_blank" rel="noreferrer">View more</a>}</span>
             </div>
-          </div>
+         </div>
         })}
+        </div>
        </div>
+        <OptionsController 
+          flow={flow} 
+          responses={responses}
+          setFlow={setFlow} 
+          setResponses={setResponses}
+        />
       </div>
     </>
   )
 }
+
+
+
+
 
 export default App
