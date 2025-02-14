@@ -128,8 +128,10 @@ button:focus-visible {
   margin-right: 35%;
 } 
 
-
-
+.message.loading {
+  text-align: left;
+  margin-right: 35%;
+} 
 
 .title {
   font-size: 1.5em;
