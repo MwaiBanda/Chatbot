@@ -31,8 +31,8 @@ function App() {
        </div>
        <div className="content">
         <div className="content-container">
-        {responses.map(response => {
-           return <div key={response.id} id={`${response.id}`} className={clsx("message", response.type.toLowerCase())}>
+        {responses.map((response, i) => {
+           return <div key={response.id} style={{marginTop: i === 0 ? "10px" : ""}} id={`${response.id}`} className={clsx("message", response.type.toLowerCase())}>
             <div className="text">
               {response.text.map((text, index) => {
                   return <span>{text} {index !== response.text.length - 1 && <br/>}</span>

@@ -5,6 +5,7 @@
 .options {
     background-color: #ffffff;
     width:  100%;
+    height: 20%;
     display: flex;
     display: inline-flex;
     flex-wrap: wrap;
