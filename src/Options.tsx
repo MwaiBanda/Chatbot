@@ -1,5 +1,5 @@
 import "./Options.css"
-import { Flow, Option, Response, ResponseType } from "./types/types"
+import { Flow, Option, Response, ResponseType } from "./utils/types"
 
 interface OptionsProps {
     flow: Flow

@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react'
 import './App.css'
 import clsx from 'clsx'
-import { Flow, Response, ResponseType } from "./types/types"
+import { Flow, Response, ResponseType } from "./utils/types"
 import { OptionsController } from './OptionsController'
 import { Player } from '@lottiefiles/react-lottie-player';
 
