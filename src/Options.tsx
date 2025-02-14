@@ -7,13 +7,13 @@ interface OptionsProps {
     responses: Response[]
     setFlow: (flow: Flow) => void
     setResponses: (response: Response[]) => void
-  }
-  
-export function Options({flow, options, responses, setFlow, setResponses}: OptionsProps) {
+}
+
+export function Options({ flow, options, responses, setFlow, setResponses }: OptionsProps) {
     const tabNameStyle = () => {
-        switch(flow) {
+        switch (flow) {
             case Flow.Programs:
-                return { 
+                return {
                     fontSize: "0.3em"
                 }
             default:
@@ -23,9 +23,9 @@ export function Options({flow, options, responses, setFlow, setResponses}: Optio
         }
     }
     const tabStyle = () => {
-        switch(flow) {
+        switch (flow) {
             case Flow.Programs:
-                return { 
+                return {
                     height: "30px",
                     lineHeight: "30px"
                 }
@@ -37,18 +37,18 @@ export function Options({flow, options, responses, setFlow, setResponses}: Optio
         }
     }
     return <div className="options">
-      {options.map((option) => {
-        return <div className="tab" style={tabStyle()} key={option.id}>
-          <div className="tab-name" style={tabNameStyle()} onClick={() => {
-            setFlow(option.flow)
-            setResponses([
-              ...responses,
-              {id: responses[responses.length - 1].id + 1, text: [option.name], type: ResponseType.Reply}
-            ])
-          }}>
-            {option.name}
-          </div>
-        </div>
-      })}
+        {options.map((option) => {
+            return <div className="tab" style={tabStyle()} key={option.id}>
+                <div className="tab-name" style={tabNameStyle()} onClick={() => {
+                    setFlow(option.flow)
+                    setResponses([
+                        ...responses,
+                        { id: responses[responses.length - 1].id + 1, text: [option.name], type: ResponseType.Reply }
+                    ])
+                }}>
+                    {option.name}
+                </div>
+            </div>
+        })}
     </div>
-  } 
+} 
