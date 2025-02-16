@@ -5,8 +5,8 @@ export const welcomeOptions: Option[] = [
     { id: 1, name: 'Courses', flow: Flow.Courses },
     { id: 3, name: 'Locations', flow: Flow.Locations },
     { id: 4, name: 'Admssions', flow: Flow.Admissions },
-    { id: 5, name: 'Contact', flow: Flow.Contact },
-    { id: 6, name: 'About Us', flow: Flow.AboutUs },
+    { id: 5, name: 'Resources', flow: Flow.Resources },
+    { id: 6, name: 'Contact', flow: Flow.Contact },
 ]
 
 export const programOptions: Option[] = [
@@ -18,6 +18,26 @@ export const programOptions: Option[] = [
     { id: 7, name: 'Computer Science', flow: Flow.ComputerScience },
     { id: 3, name: 'Information Technology Support', flow: Flow.InformationTechnologySupport },
     { id: 4, name: 'Network Infrastructure', flow: Flow.NetworkInfrastructure },
+]
+
+export const coursesOptions: Option[] = [
+    { id: 1, name: 'Class Formats', flow: Flow.ClassFormats },
+    { id: 2, name: 'Class Scheduling', flow: Flow.ClassScheduling },
+    { id: 3, name: 'Hands-On Learning', flow: Flow.HandsOnLearning },
+]
+
+export const admissionsOptions: Option[] = [
+    { id: 1, name: 'How to Apply', flow: Flow.ClassFormats },
+    { id: 2, name: 'Tuition', flow: Flow.ClassScheduling },
+    { id: 3, name: 'Knowledge Assessment', flow: Flow.HandsOnLearning },
+]
+
+export const resourcesOptions: Option[] = [
+    { id: 1, name: 'Advising', flow: Flow.Advising },
+    { id: 2, name: 'Library', flow: Flow.Library },
+    { id: 3, name: 'Safety', flow: Flow.Safety },
+    { id: 4, name: 'Tutoring', flow: Flow.Tutoring },
+    { id: 5, name: 'Support services', flow: Flow.SupportServices },
 ]
 
 export const backOptions: Option[] = [

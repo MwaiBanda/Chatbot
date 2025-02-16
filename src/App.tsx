@@ -8,8 +8,8 @@ import { Player } from '@lottiefiles/react-lottie-player';
 function App() {
   const [responses, setResponses] = React.useState<Response[]>(
     [
-      { id: 1, text: ['Hello 👋🏾', 'How are you doing today?'], type: ResponseType.Response },
-      { id: 2, text: ['What brings you to Ivy Tech today? 😊'], type: ResponseType.Response },
+      { id: 1001, text: ['Hello 👋🏾', 'How are you doing today?'], type: ResponseType.Response },
+      { id: 1002, text: ['What brings you to Ivy Tech today? 😊'], type: ResponseType.Response },
     ]
   )
   const [flow, setFlow] = React.useState<Flow>(Flow.Welcome)

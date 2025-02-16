@@ -22,7 +22,7 @@ export enum Flow {
   Locations = 'Locations',
   Admissions = 'Admissions',
   Contact = 'Contact',
-  AboutUs = 'AboutUs',
+  Resources = 'Resources',
 
   /* Program Flows */
   CyberSecurity = 'CyberSecurity',
@@ -33,4 +33,21 @@ export enum Flow {
   ComputerScience = 'ComputerScience',
   InformationTechnologySupport = 'InformationTechnologySupport',
   NetworkInfrastructure = 'NetworkInfrastructure',
+
+  /* Course Flows */
+  ClassFormats = 'ClassFormats',
+  ClassScheduling = 'ClassScheduling',
+  HandsOnLearning = 'HandsOnLearning',
+
+  /* Admissions Flows */
+  HowToApply = 'HowToApply',
+  Tuition = 'Tuition',
+  KnowledgeAssessment = 'KnowledgeAssessment',
+
+  /* Resource Flows */
+  Advising = 'Advising',
+  Library = 'Library',
+  Safety = 'Safety',
+  Tutoring = 'Tutoring',
+  SupportServices = 'SupportServices',
 }
