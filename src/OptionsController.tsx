@@ -27,7 +27,7 @@ export function OptionsController({
         setTimeout(() => {
             setLoading(false)
             checkProgramsFlow(flow, responses, setResponses)
-        }, 1500)
+        }, 1000)
     }, [flow])
 
     switch (flow) {

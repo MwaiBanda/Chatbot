@@ -40,11 +40,11 @@ export function Options({ flow, options, responses, setFlow, setResponses }: Opt
         {options.map((option) => {
             return <div className="tab" style={tabStyle()} key={option.id}>
                 <div className="tab-name" style={tabNameStyle()} onClick={() => {
-                    setFlow(option.flow)
                     setResponses([
                         ...responses,
                         { id: responses[responses.length - 1].id + 1, text: [option.name], type: ResponseType.Reply }
                     ])
+                    setFlow(option.flow)
                 }}>
                     {option.name}
                 </div>
