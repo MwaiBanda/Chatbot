@@ -4,25 +4,32 @@
 
 .options {
     background-color: #ffffff;
-    width:  100%;
+    width:  95%;
     height: 20%;
-    display: flex;
     display: inline-flex;
     flex-wrap: wrap;
     padding-top: 15px;
     gap: 15px;  
+    justify-content: start;
+    align-content: start;
 }
+@media only screen and (max-width: 768px) {
+    .options {
+        width:  100%;
+        }
+  }
 
 .tab {
     border: 2px solid rgb(154, 154, 158);
-    border-radius: 10px;
+    border-radius: 25px;
     text-align: center;
     vertical-align: middle;
     color: rgb(86, 86, 89);
     font-weight: 600;
+   
 }
 
 .tab-name {
-    margin: 0 10px;
+    margin: 0px 20px;
 }
   

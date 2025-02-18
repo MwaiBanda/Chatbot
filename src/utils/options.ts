@@ -3,10 +3,10 @@ import { Flow, Option } from "./types"
 export const welcomeOptions: Option[] = [
     { id: 2, name: 'Programs', flow: Flow.Programs },
     { id: 1, name: 'Courses', flow: Flow.Courses },
-    { id: 3, name: 'Locations', flow: Flow.Locations },
     { id: 4, name: 'Admssions', flow: Flow.Admissions },
+    { id: 3, name: 'Locations', flow: Flow.Locations },
     { id: 5, name: 'Resources', flow: Flow.Resources },
-    { id: 6, name: 'Contact', flow: Flow.Contact },
+    { id: 6, name: 'Contact Us', flow: Flow.Contact },
 ]
 
 export const programOptions: Option[] = [
@@ -14,7 +14,7 @@ export const programOptions: Option[] = [
     { id: 1, name: 'Data Analytics', flow: Flow.DataAnalytics },
     { id: 8, name: 'Informatics', flow: Flow.Informatics },
     { id: 5, name: 'Cloud Technology', flow: Flow.CloudTechnologies },
-    { id: 6, name: 'Software Dev.', flow: Flow.SoftwareDevelopment },
+    { id: 6, name: 'Software Development', flow: Flow.SoftwareDevelopment },
     { id: 7, name: 'Computer Science', flow: Flow.ComputerScience },
     { id: 3, name: 'Information Technology Support', flow: Flow.InformationTechnologySupport },
     { id: 4, name: 'Network Infrastructure', flow: Flow.NetworkInfrastructure },

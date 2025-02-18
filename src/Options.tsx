@@ -14,11 +14,11 @@ export function Options({ flow, options, responses, setFlow, setResponses }: Opt
         switch (flow) {
             case Flow.Programs:
                 return {
-                    fontSize: "0.3em"
+                    fontSize: "0.6em"
                 }
             default:
                 return {
-                    fontSize: "1em"
+                    fontSize: "0.8em"
                 }
         }
     }
@@ -31,8 +31,8 @@ export function Options({ flow, options, responses, setFlow, setResponses }: Opt
                 }
             default:
                 return {
-                    height: "40px",
-                    lineHeight: "40px"
+                    height: "37px",
+                    lineHeight: "37px"
                 }
         }
     }
