@@ -27,9 +27,9 @@ export const coursesOptions: Option[] = [
 ]
 
 export const admissionsOptions: Option[] = [
-    { id: 1, name: 'How to Apply', flow: Flow.ClassFormats },
-    { id: 2, name: 'Tuition', flow: Flow.ClassScheduling },
-    { id: 3, name: 'Knowledge Assessment', flow: Flow.HandsOnLearning },
+    { id: 1, name: 'How to Apply', flow: Flow.HowToApply },
+    { id: 2, name: 'Tuition', flow: Flow.Tuition },
+    { id: 3, name: 'Knowledge Assessment', flow: Flow.KnowledgeAssessment },
 ]
 
 export const resourcesOptions: Option[] = [
