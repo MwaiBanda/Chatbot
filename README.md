@@ -14,7 +14,7 @@ https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
 https://classic.yarnpkg.com/lang/en/docs/install/
 
 ## How to install and launch the application
-N.B: the app is also accessible through this URL we have it hosted on: https://chatbot-brown-team.netlify.app/
+<b>N.B</b>: the app is also accessible through this URL we have it hosted on: https://chatbot-brown-team.netlify.app/ <br>
 Additionally, to run the application once yarn is installed, if this is the first time you are trying to run the app, you first need to run the yarn command to download the project dependencies onto your computer: 
 
 ### yarn install 
